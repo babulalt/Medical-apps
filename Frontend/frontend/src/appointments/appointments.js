@@ -18,7 +18,7 @@ class Appointments extends Component{
 
                 console.log(res)
                 this.setState({
-                    myappointment: res.data
+                    myappointment: res.data.data
                 })
 
                 console.log(res.data)

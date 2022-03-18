@@ -31,7 +31,7 @@ class Patientdashboard extends Component {
 		})
 			.then((response) => {
 				this.setState({
-					myappointment: response.data,
+					myappointment: response.data.data,
 				});
 			})
 			.catch((err) => {
