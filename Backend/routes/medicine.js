@@ -45,30 +45,7 @@ router.post('/medicine/insert',auth.verifypatient, async function(req,res){
 
 })
 
-router.put('/Medicine/update',async function(req,res){
-  try{
-    const updateMedicine=await Medicine.updateOne(
-      {_id:req.body.id},
-      {medicinename:req.body.medicinename,
-      quantity:req.body.quantity,
-      price:req.body.price}
-    )
-    res.json({
-      message:"succesfully updated",
-      data:updateMedicine,
-      success:true
-    })
-    console.log(updateMedicine)
 
-  }
-  catch(e){
-    res.json({
-      message:"error"+e
-    })
-    console.log(e)
-
-  }
-})
 
 router.delete('/Medicine/delete/:id',async function(req,res){
   try{
