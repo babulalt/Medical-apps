@@ -76,55 +76,81 @@ class patmedicine extends Component {
       
     
         return (
-            <>
+          <>
+            <header class="container">
+              <h2>MY SHOP</h2>
+              <h2>MY SHOP</h2>
+              <h2>MY SHOP</h2>
 
-                <header class="container">
-                    <h2>MY SHOP</h2>
-                    <h2>MY SHOP</h2>
-                    <h2>MY SHOP</h2>
-                
-                    <h2><center>My Pharmacy</center></h2>
-                    <p><center>Get what you want in a single click!</center></p>
-                    <p></p>
-                    <center><p></p></center>
-                </header>
+              <h2>
+                <center id="profile">My Pharmacy</center>
+              </h2>
+              <p>
+                <center id="profile">
+                  Get what you want in a single click!
+                </center>
+              </p>
+              <p></p>
+              <center>
+                <p></p>
+              </center>
+            </header>
 
-                {
-                    this.state.myproducts.map(product => {
-                        return (
-                            <center> <div class="col-md-7 col-lg-8 col-xl-9">
-                                <div class="appointments">
-                                    <div class="appointment-list">
-                                        <div class="profile-info-widget">
-                                            <a href="patient-profile.html" class="booking-doc-img">
-                                                <img src="assets/img/patients/download.jpg" alt="User Image"></img>
-                                            </a>
-                                            <div class="profile-det-info">
-                                                <h4><a href="patient-profile.html"><b>{product.medicinename}</b></a></h4>
-                                                <div class="patient-details">
-                                                    <h5><i class=""></i> Quantity: <b>{product.quantity}</b></h5>
-                                                    <h5><i class=""></i> Price :   <b>{product.price}</b></h5>
-                                                    <h5><i class=""></i> Exp Date: <b>{product.expdate}</b></h5>
-                                                    {/* <h5 class="mb-0"><i class="fas fa-phone"></i>{product.pname}</h5> */}
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="appointment-action">
-                                           
-                                           
-                                            <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
-                                                <i class="fas fa-times"></i> Add
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></center>
-                        )
-                    })
-                }
-
-            </>
-        )
+            {this.state.myproducts.map((product) => {
+              return (
+                <center>
+                  {" "}
+                  <div class="col-md-7 col-lg-8 col-xl-9" id="abcde">
+                    <div class="appointments">
+                      <div class="appointment-list">
+                        <div class="profile-info-widget">
+                          <a
+                            href="patient-profile.html"
+                            class="booking-doc-img"
+                          >
+                            <img
+                              src="assets/img/patients/download.jpg"
+                              alt="User Image"
+                            ></img>
+                          </a>
+                          <div class="profile-det-info">
+                            <h4>
+                              <a href="patient-profile.html">
+                                <b>{product.medicinename}</b>
+                              </a>
+                            </h4>
+                            <div class="patient-details">
+                              <h5>
+                                <i class=""></i> Quantity:{" "}
+                                <b>{product.quantity}</b>
+                              </h5>
+                              <h5>
+                                <i class=""></i> Price : <b>{product.price}</b>
+                              </h5>
+                              <h5>
+                                <i class=""></i> Exp Date:{" "}
+                                <b>{product.expdate}</b>
+                              </h5>
+                              {/* <h5 class="mb-0"><i class="fas fa-phone"></i>{product.pname}</h5> */}
+                            </div>
+                          </div>
+                        </div>
+                        <div class="appointment-action">
+                          <a
+                            href="javascript:void(0);"
+                            class="btn btn-sm bg-danger-light"
+                          >
+                            <i class="fas fa-times"></i> Add
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              );
+            })}
+          </>
+        );
     }
 }
 
