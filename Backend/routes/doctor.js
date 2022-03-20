@@ -35,29 +35,7 @@ router.post('/doctor/register',function(req,res){
 
 })
 
-router.put('/doctor/update', function(req,res){
-    const id = req.body._id;
-    const username =req.body.username;
-    const gender =req.body.gender;
-    const email = req.body.email;
-    const phone = req.body.phone;
-    console.log(req.body)
-    doctorModel.updateOne ({_id: id},
-        {username:username,gender:gender, email:email,phone:phone})
-    
-    
-    .then(function(result){
-        console.log(result)
-         res.status(201).json({message: "Profile pic updated", success: true})
-    })
-        
-    .catch(function(err){
-        console.log(err)
-        res.status(500).json({message: err})
 
-    });
-
-})
 
 
 router.post('/doctor/login', function(req,res){
