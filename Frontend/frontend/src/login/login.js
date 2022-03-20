@@ -78,11 +78,11 @@ class Login extends Component {
 					<div class="container-login100">
 						<div class="wrap-login100">
 							<div class="login100-pic js-tilt" data-tilt>
-								<img src="images/img-01.png" alt="IMG"></img>
+								<img src="assets/img/doctors/doctor-01.jpg" alt="IMG" id="abc"></img>
 							</div>
 
-							<form class="login100-form validate-form">
-								<span class="login100-form-title">
+							<form class="login100-form validate-form" id="login">
+								<span class="login100-form-title" id="text1">
 									Member Login
 								</span>
 

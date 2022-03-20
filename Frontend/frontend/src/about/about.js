@@ -8,16 +8,16 @@ class About extends Component {
 
 				<div class="home d-flex flex-column align-items-start justify-content-end">
 					{/* <!-- <div class="background_image" style="background-image:url(images/about.jpg)"></div> --> */}
-					<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div>
-					<div class="home_overlay"><img src="images/home_overlay.png" alt=""></img></div>
+					{/* <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/about.jpg" data-speed="0.8"></div> */}
+					<div class="home_overlay"><img src="images/home_slider.jpg" alt=""></img></div>
 					<div class="home_container">
 						<div class="container">
 							<div class="row">
 								<div class="col">
 									<div class="home_content">
-										<div class="home_title">About us</div>
-										<div class="home_text">Welcome to our
-											Pharmacy
+										<div class="home_title" id="text3">About us</div>
+										<div class="home_text" id="text3">Welcome to our
+											E-health
 											We provide top
 											medical services</div>
 									</div>

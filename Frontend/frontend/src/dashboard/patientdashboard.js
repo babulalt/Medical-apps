@@ -192,10 +192,10 @@ class Patientdashboard extends Component {
 											{/* <!-- Appointment Tab --> */}
 
 											<div id="pat_appointments" class="tab-pane fade show active">
-												<div class="card card-table mb-0">
+												<div class="card card-table mb-0" id="table">
 													<div class="card-body">
-														<div class="table-responsive">
-															<table class="table table-hover table-center mb-0">
+														<div class="table-responsive" >
+															<table class="table table-hover table-center mb-0" >
 																<thead>
 																	<tr>
 																		<th>Doctor</th>

@@ -5,12 +5,9 @@ const router = new express.Router();
 const auth =require("../middleware/auth")
 
 
-router.post('/medicine/insert',auth.verifypatient, async function(req,res){
+router.post('/medicine/insert', async function(req,res){
   console.log(req.body)
- 
- 
-
-
+  const id = req.body._id;
   const medicinename = req.body.medicinename;
   const price = req.body.price;
   const quantity = req.body.quantity;
@@ -19,7 +16,7 @@ router.post('/medicine/insert',auth.verifypatient, async function(req,res){
   try{
 
     
-    const medicine =  new Medicine({userid:req.userData._id,medicinename:medicinename,
+    const medicine =  new Medicine({medicinename:medicinename,
     price:price, expdate: expdate,quantity:quantity});
     const result = await medicine.save()
     console.log(result)
@@ -45,29 +42,30 @@ router.post('/medicine/insert',auth.verifypatient, async function(req,res){
 
 })
 
-router.put("/Medicine/update", async function (req, res) {
-  try {
-    const updateMedicine = await Medicine.updateOne(
-      { _id: req.body.id },
-      {
-        medicinename: req.body.medicinename,
-        quantity: req.body.quantity,
-        price: req.body.price,
-      }
-    );
+router.put('/Medicine/update',async function(req,res){
+  try{
+    const updateMedicine=await Medicine.updateOne(
+      {_id:req.body.id},
+      {medicinename:req.body.medicinename,
+      quantity:req.body.quantity,
+      price:req.body.price}
+    )
     res.json({
-      message: "succesfully updated",
-      data: updateMedicine,
-      success: true,
-    });
-    console.log(updateMedicine);
-  } catch (e) {
-    res.json({
-      message: "error" + e,
-    });
-    console.log(e);
+      message:"succesfully updated",
+      data:updateMedicine,
+      success:true
+    })
+    console.log(updateMedicine)
+
   }
-});
+  catch(e){
+    res.json({
+      message:"error"+e
+    })
+    console.log(e)
+
+  }
+})
 
 router.delete('/Medicine/delete/:id',async function(req,res){
   try{

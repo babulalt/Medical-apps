@@ -79,18 +79,18 @@ class Medicine extends Component {
                     <h2>MY SHOP</h2>
                     <h2>MY SHOP</h2>
                 
-                    <h2><center>My Pharmacy</center></h2>
-                    <p><center>Get what you want in a single click!</center></p>
+                    <h2><center id="abcdef">My Pharmacy</center></h2>
+                    <p id="abcdef"><center>Get what you want in a single click!</center></p>
                     <p></p>
-                    <center><p><button class="btn btn-sm bg-success-light"><NavLink to ="/medicineinsert">
+                    <center><h3><button class="btn btn-sm bg-success-light" id="product-insert"><NavLink to ="/medicineinsert">
 							Product Insert
-                            </NavLink></button> </p></center>
+                            </NavLink></button> </h3></center>
                 </header>
 
                 {
                     this.state.myproducts.map(product => {
                         return (
-                            <center> <div class="col-md-7 col-lg-8 col-xl-9">
+                            <center> <div class="col-md-7 col-lg-8 col-xl-9" id="abcde">
                                 <div class="appointments">
                                     <div class="appointment-list">
                                         <div class="profile-info-widget">

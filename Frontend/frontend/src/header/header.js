@@ -11,7 +11,7 @@ class Header extends Component{
     render(){
         if(localStorage.getItem('token') && localStorage.getItem('usertype') === 'Doctor'){
           var menu =
-		  <nav class="main_nav">
+		  <nav class="main_nav" >
 		  <ul class="d-flex flex-row align-items-center justify-content-start">
 			  <li><NavLink to="/about">About us</NavLink></li>
 			  <li><NavLink to="/home">Dashboard</NavLink></li>
@@ -30,7 +30,7 @@ class Header extends Component{
 
 			var menu = 
 			
-			<nav class="main_nav">
+			<nav class="main_nav" >
 			<ul class="d-flex flex-row align-items-center justify-content-start">
 			<li><NavLink to="/">Home</NavLink></li>
 				<li><NavLink to="/about">About us</NavLink></li>
@@ -50,7 +50,7 @@ class Header extends Component{
 		else{
 
 			var menu = 
-			<nav class="main_nav">
+			<nav class="main_nav" >
 			<ul class="d-flex flex-row align-items-center justify-content-start">
 			<li><NavLink to="/">Home</NavLink></li>
 				<li><NavLink to="/about">About us</NavLink></li>
@@ -64,7 +64,7 @@ class Header extends Component{
 				<li></li>
 				
 				<div class="header_phone">+977-9804350751</div>
-				<div class="button button_1 header_button"><NavLink to ="/login">Make an Appointment</NavLink></div>
+				<div class="button button_1 header_button" id="header-appointment"><NavLink to ="/login">Make an Appointment</NavLink></div>
 
 				
 				
@@ -75,15 +75,15 @@ class Header extends Component{
 		}
 	
         return(
-            <div>
-            <header class="header trans_400">
+            <div >
+            <header class="header trans_400" id="header-color">
 		<div class="header_content d-flex flex-row align-items-center jusity-content-start trans_400">
 
 			{/* <!-- Logo --> */}
 			<div class="logo">
 				<a href="#">
-					<div>Medical<span>PRO</span></div>
-					<div>Care First</div>
+					<div>Digital<span>Medical</span></div>
+					<div>Health First</div>
 				</a>
 			</div>
 

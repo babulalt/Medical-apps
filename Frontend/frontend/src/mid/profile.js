@@ -79,6 +79,7 @@ class profile extends Component{
 
     updateMedicine =(e) =>{
       e.preventDefault();
+	  const data=new FormData();
       axios.put("http://localhost:90/doctor/update/",this.state)
       .then(res=>{
         Swal.fire({ title: '', text: "Successfully updated", icon: 'success', showCancelButton: false, confirmButtonColor: '#3085d6', cancelButtonColor: '#d33', confirmButtonText: 'OK' })

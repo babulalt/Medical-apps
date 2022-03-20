@@ -77,14 +77,48 @@ class Home extends Component {
 
                 <div class="intro">
                     <div class="container">
-                        <div class="row">
+                        <div class="row" id="form-down">
+
+                        <div class="col-lg-6 intro_col" >
+                                <div class="intro_form_container">
+                                    <div class="intro_form_title" id="appointment1">Make an Appointment</div>
+                                    <form action="#" class="intro_form" id="intro_form">
+                                        <div class="d-flex flex-row align-items-start justify-content-between flex-wrap">
+                                            <input type="text" class="intro_input" placeholder="Your Name" name="name" required="required"
+                                                value={this.state.name}
+                                                onChange={this.textChangeHandler}>
+                                            </input>
+                                            <input type="text" class="intro_input" placeholder="Purpose" name="purpose" required="required" value={this.state.purpose} onChange={this.textChangeHandler}></input>
+                                            <input type="text" class="intro_input" placeholder="Your Phone" name="phone" required="required" value={this.state.phone} onChange={this.textChangeHandler}></input>
+                                            <select class="intro_select intro_input" value={this.state.speciality} onChange={this.selectChange}>
+                                                <option>Speciality</option>
+                                                <option value="Cardiology">Cardiology</option>
+                                                <option value="Neurology">Neurology</option>
+                                                <option value="orthopedics">orthopedics</option>
+                                                <option value="Gastrology">Gastrology</option>
+
+                                            </select>
+                                            <select class="intro_select intro_input" value={this.state.doctor} onChange={this.changeFileHandler}>
+                                                <option>Doctor</option>
+                                                <option value="DR. Pawan Singh">Dr. pawan Singh</option>
+                                                <option value="DR. Rajiv Karki">DR. Rajiv Karki</option>
+                                                <option value="DR. Subodh Shah">DR. Subodh Shah</option>
+                                                <option value="DR. Roshan Tamang">DR. Roshan Khadka</option>
+
+                                            </select>
+                                            <input type="text" id="datepicker" class="intro_input datepicker" placeholder="Date" name="date" value={this.state.date} onChange={this.textChangeHandler}></input>
+                                        </div>
+                                        <button class="button button_1 intro_button trans_200" id="appointment2" onClick={this.sendData}>make an appointment</button>
+                                    </form>
+                                </div>
+                            </div>
 
                             {/* <!-- Intro Content --> */}
                             <div class="col-lg-6 intro_col">
                                 <div class="intro_content">
                                     <div class="section_title_container">
-                                        <div class="section_subtitle">This is Dr Pro</div>
-                                        <div class="section_title"><h2>Welcome to our Clinic</h2></div>
+                                        <div class="section_subtitle">This is Digital Medical</div>
+                                        <div class="section_title"><h2>Welcome to the E-health</h2></div>
                                     </div>
                                     <div class="intro_text">
                                         <p>We provide HOME DELIVERY SERVICE with up to 12% discount (*conditions apply) for our patients. No extra charges or taxes. We are attentive when prescribing drugs.
@@ -124,39 +158,7 @@ class Home extends Component {
                             </div>
 
                             {/* <!-- Intro Form --> */}
-                            <div class="col-lg-6 intro_col">
-                                <div class="intro_form_container">
-                                    <div class="intro_form_title">Make an Appointment</div>
-                                    <form action="#" class="intro_form" id="intro_form">
-                                        <div class="d-flex flex-row align-items-start justify-content-between flex-wrap">
-                                            <input type="text" class="intro_input" placeholder="Your Name" name="name" required="required"
-                                                value={this.state.name}
-                                                onChange={this.textChangeHandler}>
-                                            </input>
-                                            <input type="text" class="intro_input" placeholder="Purpose" name="purpose" required="required" value={this.state.purpose} onChange={this.textChangeHandler}></input>
-                                            <input type="text" class="intro_input" placeholder="Your Phone" name="phone" required="required" value={this.state.phone} onChange={this.textChangeHandler}></input>
-                                            <select class="intro_select intro_input" value={this.state.speciality} onChange={this.selectChange}>
-                                                <option>Speciality</option>
-                                                <option value="Cardiology">Cardiology</option>
-                                                <option value="Neurology">Neurology</option>
-                                                <option value="orthopedics">orthopedics</option>
-                                                <option value="Gastrology">Gastrology</option>
-
-                                            </select>
-                                            <select class="intro_select intro_input" value={this.state.doctor} onChange={this.changeFileHandler}>
-                                                <option>Doctor</option>
-                                                <option value="DR. Pawan Singh">Dr. pawan Singh</option>
-                                                <option value="DR. Rajiv Karki">DR. Rajiv Karki</option>
-                                                <option value="DR. Subodh Shah">DR. Subodh Shah</option>
-                                                <option value="DR. Roshan Tamang">DR. Roshan Khadka</option>
-
-                                            </select>
-                                            <input type="text" id="datepicker" class="intro_input datepicker" placeholder="Date" name="date" value={this.state.date} onChange={this.textChangeHandler}></input>
-                                        </div>
-                                        <button class="button button_1 intro_button trans_200" onClick={this.sendData}>make an appointment</button>
-                                    </form>
-                                </div>
-                            </div>
+                           
 
                         </div>
                     </div>

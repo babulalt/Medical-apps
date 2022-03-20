@@ -16,8 +16,8 @@ class Footer extends Component{
 						<div class="footer_about">
 							<div class="footer_logo">
 								<a href="#">
-									<div>Medical<span>PRO</span></div>
-									<div>Care First</div>
+									<div>Digital<span>medical</span></div>
+									<div>Health First</div>
 								</a>
 							</div>
 							<div class="footer_about_text">

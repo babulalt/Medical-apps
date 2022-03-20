@@ -8,7 +8,7 @@ const jwt=require("jsonwebtoken")
 router.post('/doctor/register',function(req,res){
     console.log(req.body)       
     const username = req.body.username;
-    const fullname = req.body.username;
+    const fullname = req.body.fullname;
     const email = req.body.email;
     const password = req.body.password;
     const usertype=req.body.usertype;

@@ -74,11 +74,11 @@ class Register extends Component {
                     <div class="container-login100">
                         <div class="wrap-login100">
                             <div class="login100-pic js-tilt" data-tilt>
-                                <img src="images/img-01.png" alt="IMG"></img>
+                                <img src="assets/img/login-banner.png" alt="IMG" id="abcd"></img>
                             </div>
 
-                            <form class="login100-form validate-form">
-                              <span class="login100-form-title">
+                            <form class="login100-form validate-form" id="form1">
+                              <span class="login100-form-title" id="text2">
                                     Member Enrollment Form</span>
                                    <span class="login100-form-title"> {this.state.usertype}</span>
                               

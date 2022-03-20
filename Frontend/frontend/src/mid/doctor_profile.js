@@ -49,12 +49,12 @@ class DoctorProfile extends Component {
                     <h2>MY SHOP</h2>
                     <h2>MY SHOP</h2>
                 
-                    <h2><center>My Profile</center></h2>
-                    <p><center>Manage your profile</center></p>
+                    <h2><center id="profile">My Profile</center></h2>
+                    <p><center id="profile">Manage your profile</center></p>
                     <p></p>
                     <center><p> </p></center>
                 </header>
-                <center> <div class="col-md-7 col-lg-8 col-xl-9">
+                <center> <div class="col-md-7 col-lg-8 col-xl-9" id="abcde">
                                 <div class="appointments">
                                     <div class="appointment-list">
                                         <div class="profile-info-widget">
@@ -67,7 +67,7 @@ class DoctorProfile extends Component {
                                                     <h5><i class=""></i> Usertype: <b>{this.state.doctors.usertype}</b></h5>
                                                     <h5><i class=""></i> Gender :   <b>{this.state.doctors.gender}</b></h5>
                                                     <h5><i class=""></i> Email :   <b>{this.state.doctors.email}</b></h5>
-                                                    <h5><i class=""></i> Email :   <b>{this.state.doctors.phone}</b></h5>
+                                                    <h5><i class=""></i> Phone :   <b>{this.state.doctors.phone}</b></h5>
                                                     {/* <h5><i class=""></i> Exp Date: <b>{doctor.expdate}</b></h5> */}
                                                     <h5><i class=""></i>   <b></b></h5>
                                                 

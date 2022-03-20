@@ -47,13 +47,13 @@ class Doctordashboard extends Component{
 						<li class="nav-item dropdown has-arrow logged-item">
 							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 								<span class="user-img">
-									<img class="rounded-circle" src="assets/img/doctors/doctor-thumb-02.jpg" width="31" alt="Darren Elder"></img>
+									<img class="rounded-circle" src="assets/img/doctors/doctor-12.jpg" width="31" alt="Darren Elder"></img>
 								</span>
 							</a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<div class="user-header">
 									<div class="avatar avatar-sm">
-										<img src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle"></img>
+										<img src="assets/img/doctors/doctor-12.jpg" alt="User Image" class="avatar-img rounded-circle"></img>
 									</div>
 									<div class="user-text">
 										<h6>Darren Elder</h6>
@@ -72,7 +72,7 @@ class Doctordashboard extends Component{
 			{/* <!-- /Header -->
 			 */}
 			{/* <!-- Breadcrumb --> */}
-			<h1></h1>
+			
 			<div class="breadcrumb-bar">
 				<div class="container-fluid">
 					<div class="row align-items-center">
@@ -98,11 +98,11 @@ class Doctordashboard extends Component{
 						<div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
 							
 							{/* <!-- Profile Sidebar --> */}
-							<div class="profile-sidebar">
+							<div class="profile-sidebar" id="sidebar">
 								<div class="widget-profile pro-widget-content">
 									<div class="profile-info-widget">
 										<a href="#" class="booking-doc-img">
-											<img src="assets/img/doctors/doctor-thumb-02.jpg" alt="User Image"></img>
+											<img src="assets/img/doctors/doctor-12.jpg" alt="User Image"></img>
 										</a>
 										<div class="profile-det-info">
 											<h3>{localStorage.getItem('username')}</h3>
@@ -162,7 +162,7 @@ class Doctordashboard extends Component{
 						
 						<div class="col-md-7 col-lg-8 col-xl-9">
 
-							<div class="row">
+							<div class="row" id="pat">
 								<div class="col-md-12">
 									<div class="card dash-card">
 										<div class="card-body">
@@ -192,7 +192,7 @@ class Doctordashboard extends Component{
 														<div class="dash-widget-info">
 															<h6>Today Patient</h6>
 															<h3>160</h3>
-															<p class="text-muted">06, Nov 2019</p>
+															<p class="text-muted">06, Nov 2022</p>
 														</div>
 													</div>
 												</div>
@@ -207,7 +207,7 @@ class Doctordashboard extends Component{
 														<div class="dash-widget-info">
 															<h6>Appoinments</h6>
 															<h3>85</h3>
-															<p class="text-muted">06, Apr 2019</p>
+															<p class="text-muted">06, Apr 2022</p>
 														</div>
 													</div>
 												</div>
@@ -219,7 +219,7 @@ class Doctordashboard extends Component{
 							
 							<div class="row">
 								<div class="col-md-12">
-									<h4 class="mb-4">Patient Appoinment</h4>
+									<h4 class="mb-4" id="talajhar">Patient Appoinment</h4>
 									<div class="appointment-tab">
 									
 										{/* <!-- Appointment Tab --> */}
@@ -237,7 +237,7 @@ class Doctordashboard extends Component{
 										
 											{/* <!-- Upcoming Appointment Tab --> */}
 											<div class="tab-pane show active" id="upcoming-appointments">
-												<div class="card card-table mb-0">
+												<div class="card card-table mb-0" id="table">
 													<div class="card-body">
 														<div class="table-responsive">
 															<table class="table table-hover table-center mb-0">
