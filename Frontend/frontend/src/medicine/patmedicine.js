@@ -100,7 +100,7 @@ class patmedicine extends Component {
               return (
                 <center>
                   {" "}
-                  <div class="col-md-7 col-lg-8 col-xl-9" id="abcde">
+                  <div class="col-md-7 col-lg-8 col-xl-9" id="abcde"  >
                     <div class="appointments">
                       <div class="appointment-list">
                         <div class="profile-info-widget">

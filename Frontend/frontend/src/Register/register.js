@@ -6,13 +6,7 @@ import Select from 'react-select'
 
 
 class Register extends Component {
-    state = {
-        username: "",
-        email: "",
-        password: "",
-        gender: "",
-        usertype: ""
-    }
+
 
     RegisterDoctor = (e) => {
         this.setState({
