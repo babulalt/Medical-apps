@@ -12,21 +12,7 @@ class Appointments extends Component{
 
 
 
-    componentDidMount() {
-        axios.get("http://localhost:90/appointment/show")
-            .then((res) => {
-
-                console.log(res)
-                this.setState({
-                    myappointment: res.data.data
-                })
-
-                console.log(res.data)
-            })
-            .catch((err) => {
-                // error area
-            })
-    }
+   
     render(){
         return(
             <>
