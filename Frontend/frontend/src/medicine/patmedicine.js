@@ -97,7 +97,7 @@ class patmedicine extends Component {
                                     <div class="appointment-list">
                                         <div class="profile-info-widget">
                                             <a href="patient-profile.html" class="booking-doc-img">
-                                                <img src="assets/img/patients/patient.jpg" alt="User Image"></img>
+                                                <img src="assets/img/patients/download.jpg" alt="User Image"></img>
                                             </a>
                                             <div class="profile-det-info">
                                                 <h4><a href="patient-profile.html"><b>{product.medicinename}</b></a></h4>

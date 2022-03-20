@@ -184,7 +184,7 @@ class Appointments extends Component{
                                   class="booking-doc-img"
                                 >
                                   <img
-                                    src="assets/img/patients/patient1.jpg"
+                                    src="assets/img/patients/patient4.jpg"
                                     alt="User Image"
                                   ></img>
                                 </a>
