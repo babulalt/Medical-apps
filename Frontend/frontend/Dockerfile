@@ -4,7 +4,7 @@ FROM node:16-alpine3.14
 # Build step
 # 1. Copy package.json and package-lock.json to /app dir
 RUN mkdir /app
-COPY package*.json /app
+COPY package.json /app
 
 # 2. Change working directory to the newly created app dir
 WORKDIR /app
